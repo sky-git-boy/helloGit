@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*伪类选择器*/
+        /*第一个子元素*/
+        .div_1 > p:first-child{
+            color: red;
+        }
+        /*最后一个子元素*/
+        .div_1 > p:last-child{
+            color: cornflowerblue;
+        }
+        /*获得具体的某一个子元素*/
+        .div_1 > p:nth-child(3){
+            color: gold;
+        }
+
+        /*从0开始  偶数为红色*/
+        .div_1 > p:nth-child(even){
+            background-color: red;
+        }
+        .div_1 > p:nth-child(odd){
+            background-color: burlywood;
+        }
+
+        /*获得空的元素对象*/
+        .div_1 > p:empty{
+            height: 50px;
+            background-color: aqua;
+        }
+
+        /*获得焦点执行的样式*/
+        input:focus{
+            width: 20px;
+            height: 20px;
+        }
+
+        input:checked{
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+</head>
+<body>
+<div class="div_1">
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p></p>
+    <p>4</p>
+    <p>5</p>
+</div>
+
+<input type="text"><br>
+
+男：<input type="radio" name="sex">
+女：<input type="radio" name="sex">
+
+</body>
+</html>

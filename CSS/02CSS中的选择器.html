@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*通用选择器 *代表该页面中的所有标签*/
+        *{
+            color: cornflowerblue;
+            background-color: cornsilk;
+        }
+        /*元素选择器*/
+        div{
+            color: deepskyblue;
+            background-color: aliceblue;
+        }
+        /*id选择器 id不允许重复*/
+        #div1{
+            background-color: cadetblue;
+        }
+        /*类选择器  可以重复*/
+        .div_1{
+            background-color: red;
+        }
+    </style>
+
+</head>
+<body>
+    <!--
+        选择器优先级
+
+        id > class > 标签 > 通用
+    -->
+    <div>1</div>
+    <div id="div1" class="div_1">2</div>
+    <div class="div_1">3</div>
+    <!--    <div class="div_1">4</div>-->
+<!--    <div id="div1">5</div>-->
+</body>
+</html>

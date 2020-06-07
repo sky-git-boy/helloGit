@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input[type=text]{
+            width: 100px;
+            height: 30px;
+        }
+        /*input[type='text']{
+             width: 100px;
+             height: 30px;
+         }*/
+        input[name^='fom']{
+            width: 200px;
+            height: 30px;
+        }
+        input[id='2']{
+            width: 300px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        姓名：<input type="text" name="" value="" id="1">
+    </p>
+    <p>
+        密码：<input type="password" name="fom_1">
+    </p>
+    <p>
+        邮箱：<input type="email" name="fom_2">
+    </p>
+    <p>
+        年龄：<input type="number" id="2">
+    </p>
+</body>
+</html>
